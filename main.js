@@ -108,6 +108,49 @@ const buttondecimal = document.querySelector(".boxdecimal")
     result.appendChild(value)
 })
 
+const buttondivide = document.querySelector(".boxdivide")
+    buttondivide.addEventListener("click", function () {
+    const result = document.querySelector(".boxresult")
+    console.log(result)
+    let value = document.createElement("div")
+    let text = document.createTextNode("/")
+    console.log(text)
+    value.appendChild(text)
+    result.appendChild(value)
+})
+
+const buttonmultiply = document.querySelector(".boxmultiply")
+    buttonmultiply.addEventListener("click", function () {
+    const result = document.querySelector(".boxresult")
+    console.log(result)
+    let value = document.createElement("div")
+    let text = document.createTextNode("*")
+    console.log(text)
+    value.appendChild(text)
+    result.appendChild(value)
+})
+
+const buttonadd = document.querySelector(".boxplus")
+    buttonadd.addEventListener("click", function () {
+    const result = document.querySelector(".boxresult")
+    console.log(result)
+    let value = document.createElement("div")
+    let text = document.createTextNode("+")
+    console.log(text)
+    value.appendChild(text)
+    result.appendChild(value)
+})
+
+const buttonminus = document.querySelector(".boxminus")
+    buttonminus.addEventListener("click", function () {
+    const result = document.querySelector(".boxresult")
+    console.log(result)
+    let value = document.createElement("div")
+    let text = document.createTextNode("-")
+    console.log(text)
+    value.appendChild(text)
+    result.appendChild(value)
+})
 
 
 
@@ -115,6 +158,12 @@ let clearbutton = document.querySelector(".boxclear");
     clearbutton.addEventListener("click", function () {
     const result = document.querySelector(".boxresult")
     result.textContent = "";
+})
+
+const equals = document.querySelector(".boxequals");
+equals.addEventListener("click", function () {
+    const result = document.querySelector(".boxresult")
+    result.textContent = eval(result.textContent);
 })
 
 
